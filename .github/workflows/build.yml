@@ -9,7 +9,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@master
 
-      - name: Run Checkov action
+      - name: Run Bridgecrew action
         id: bridgecrew
         uses: bridgecrewio/bridgecrew-action@master
         with:
