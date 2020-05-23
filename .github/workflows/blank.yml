@@ -1,0 +1,14 @@
+name: build
+on:
+  pull_request
+jobs:
+  checkov-job:
+    runs-on: ubuntu-latest
+    name: bridgecrew-action
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Run Checkov action
+        id: bridgecrew
+        uses: bridgecrewio/bridgecrew-action@master
