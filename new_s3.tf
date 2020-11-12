@@ -84,7 +84,7 @@ resource "aws_vpc" "web_vpc" {
   tags = {
     Name = "${local.resource_prefix.value}-vpc"
   }
-}
+} 
 
 resource "aws_subnet" "web_subnet" {
   vpc_id                  = aws_vpc.web_vpc.id
